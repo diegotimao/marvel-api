@@ -1,0 +1,38 @@
+.loading-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.829);
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  overflow: auto;
+}
+
+.loading-content {
+  max-width: 420px;
+  height: 150px;
+  position: relative;
+  margin: 5% auto;
+  padding: 0 20px;
+  background: #870cb8;
+  border: 2px solid rgb(240, 238, 235);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.loading-content {
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+}

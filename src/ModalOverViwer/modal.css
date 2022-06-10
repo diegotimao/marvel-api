@@ -1,0 +1,283 @@
+.modal-viwer-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.829);
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  overflow: auto;
+}
+
+.modal-viwer-content {
+  width: 100%;
+  margin: 5% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-header {
+  width: 100%;
+  height: 45px;
+  padding: 13px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFC;
+  border-bottom: 1px solid #E6E6F0;
+  border-radius: 4px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.card-modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 370px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-description h1 {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.creators {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.creators-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.card-description p {
+  text-align: justify;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.card-info-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.format {
+  padding: 10px;
+  font-size: 14px;
+  background: yellow;
+  border-radius: 6px;
+}
+
+.prices {
+  color: #04D361;
+  font-size: 19px;
+}
+
+.images-related {
+  background: #F0F0F7;
+  border-radius: 6px;
+  border: 1px solid #E6E6F0;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images-related h1 {
+  color: #32264D;
+  font-size: 22px;
+}
+
+.images-related-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.images-related-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.images-related-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.action-pay {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-pay span {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: #8257E5;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.action-pay span img {
+  width: 14px;
+}
+
+.action-pay button {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  background: #04D361;
+  cursor: pointer;
+}
+
+.action-pay button:hover {
+  background: #04d361c5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-viwer-content {
+    width: 80%;
+  }
+
+  .card-modal {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .images-related-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .images-related-item img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-viwer-content {
+    max-width: 920px;
+  }
+
+  .card-modal {
+    display: flex;
+  }
+
+  .card-image {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .card-description {
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .creators-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .card-description p {
+    text-align: justify;
+    line-height: 26px;
+  }
+
+  .images-related {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .images-related-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  .images-related-item {
+    width: 100%;
+  }
+
+  .images-related-item img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+  }
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { AuthContext } from "./providers/Auth";
+import Characters from "./components/CharactersList/Characters";
+
+import './global.css';
+import Banner from "./components/Banner/Banner";
+import ModalOverViwer from "./ModalOverViwer/Modal";
+import ModalGoogleMaps from './components/ModalAdress/Modal';
+import ComicsModalEnvios from "./components/ComicsModalEnvios/ComicsModalEnvios.js";
+import Form from "./components/Form/Form";
 
 function App() {
+  const { 
+    activeModal, 
+    isCardToShipping, 
+    enviosModal 
+  } = useContext(AuthContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home-container">
+        {
+          (activeModal) && <ModalOverViwer /> 
+        }
+        {
+          (isCardToShipping) && <ModalGoogleMaps />
+        }
+        {
+          (enviosModal) && <ComicsModalEnvios />
+        }
+        <Banner />
+        <Form />
+        <Characters />
     </div>
   );
 }

@@ -1,0 +1,265 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.829);
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-header {
+  padding: 15px 0;
+}
+
+.modal-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal-header h1 {
+  font-size: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dados-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-selecionado {
+  width: 100%;
+  padding: 10px;
+  background: #F0F0F7;
+  border-radius: 4px;
+  border: 1px solid #dfdfee;
+  display: flex;
+  gap: 15px;
+}
+
+.card-selecionado img {
+  width: 120px;
+  border-radius: 5px;
+}
+
+.info-card {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.title-card {
+  font-size: 15px;
+}
+
+.description-card {
+  font-size: 14px;
+}
+
+.values-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.format-card {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: rgb(214, 151, 34);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.price-card {
+  color: #5db137;
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.adress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.adress-item label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9C98A6;
+}
+
+.item,
+.adress-item input {
+  color: #32264D;
+  border-radius: 4px;
+  border: 1px solid #b5b5ca;
+  background: #FAFAFC;
+  outline: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 35px;
+}
+
+.adress-item input {
+  border: 1px solid #edf0e6;
+}
+
+.section-grid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-grid-item-currenty {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-grid-item,
+.section-grid-item-resindency input {
+  color: #32264D;
+  border-radius: 4px;
+  border: 1px solid #b5b5ca;
+  background: #FAFAFC;
+  outline: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+}
+
+.section-grid-item-resindency {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.google-maps {
+  width: 100%;
+  height: 450px;
+  border-radius: 4px;
+}
+
+.footer-action {
+  width: 100%;
+  height: 250px;
+  padding: 25px 0;
+  background: #FAFAFC;
+  border-top: 1px solid #e4e4ee;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.message-info strong {
+  color: #7e7ed8;
+}
+
+.btn-address {
+  color: white;
+  cursor: pointer;
+  padding: 12px 80px;
+  border: none;
+  outline: none;
+  background: #04D361;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 1010px) {
+  .modal-container {
+    padding: 0 40px;
+  }
+
+  .modal-content {
+    max-width: 920px;
+  }
+
+  .modal-body {
+    flex-direction: row;
+  }
+
+  .dados-form {
+    width: 40%;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2fr)
+  }
+
+  .google-maps {
+    width: 60%;
+  }
+
+  .message-info {
+    flex-direction: row;
+  }
+
+  .footer-action {
+    flex-direction: row;
+    height: 80px;
+  }
+
+  .btn-address {
+    padding: 15px 55px;
+  }
+}
