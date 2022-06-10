@@ -20,21 +20,21 @@
 }
 
 .nav-menu-content {
-  padding: 16px 20px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-menu-content img {
-  width: 75px;
+  width: 70px;
 }
 
 .menu-list {
   display: block;
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 
 .banner-content img {
@@ -73,10 +73,6 @@
     padding: 12px 30px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .menu-list {
-    display: block;
   }
 
   .menu-list {
@@ -164,13 +160,13 @@
     max-width: 1220px;
     margin: 0 auto;
     display: flex;
-    padding: 10px 40px;
+    padding: 15px 40px;
     justify-content: space-between;
     align-items: center;
   }
 
   .nav-menu-content img {
-    width: 120px;
+    width: 90px;
   }
 
   .menu-list {

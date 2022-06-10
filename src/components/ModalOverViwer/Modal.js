@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../providers/Auth';
+import { AuthContext } from '../../providers/Auth';
 import { FiXSquare } from 'react-icons/fi';
 import './modal.css';
 

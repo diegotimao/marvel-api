@@ -14,10 +14,10 @@ function Banner() {
           <img src={ Logo } alt="Logo Icon" />
           <ul className="menu-list">
             <li>
-              <FiGithub size={20}/>
+              <FiGithub size={18} stroke="white"/>
             </li>
             <li>
-              <FiLinkedin size={20}/>
+              <FiLinkedin size={18} stroke="white"/>
             </li>
           </ul>
         </div>

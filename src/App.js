@@ -4,7 +4,7 @@ import Characters from "./components/CharactersList/Characters";
 
 import './global.css';
 import Banner from "./components/Banner/Banner";
-import ModalOverViwer from "./ModalOverViwer/Modal";
+import ModalOverViwer from "./components/ModalOverViwer/Modal";
 import ModalGoogleMaps from './components/ModalAdress/Modal';
 import ComicsModalEnvios from "./components/ComicsModalEnvios/ComicsModalEnvios.js";
 import Form from "./components/Form/Form";
