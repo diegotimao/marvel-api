@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../providers/Auth';
 import { FiHeart } from 'react-icons/fi';
 
-import Loading from '../Loading/Loading';
 import "./styles.css";
 
 function Characters() {
@@ -10,7 +9,6 @@ function Characters() {
     filters, 
     setCards, 
     setCardViwer, 
-    loading 
   } = useContext(AuthContext);
 
   function handleFavorite(id) {
@@ -21,8 +19,6 @@ function Characters() {
   }
 
   return (
-    loading ? <Loading /> : 
-
     <div className="characters-container">
       <div className="content">
         <div className="cards">
